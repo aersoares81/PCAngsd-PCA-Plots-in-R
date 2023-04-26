@@ -69,11 +69,13 @@ plot(labeled.pca)
 
 # This will output a PDF file with your plot, adjust the size and dpi to your liking.
 #It will be created in your basedir.
-ggsave(filename = paste0(basedir, "simple_pca_plot.pdf"), plot = simple.pca, width = 28, height = 24, units = "cm", dpi = 600) 
+ggsave(filename = paste0(basedir, "simple_pca_plot.pdf"), 
+plot = simple.pca, width = 28, height = 24, units = "cm", dpi = 600) 
 
 # This will output a PDF with plot that has all the labels.
 # It will be created in your basedir.
-ggsave(filename = paste0(basedir, "labeled_pca_plot.pdf"), plot = labeled.pca, width = 28, height = 24, units = "cm", dpi = 600)
+ggsave(filename = paste0(basedir, "labeled_pca_plot.pdf"), 
+plot = labeled.pca, width = 28, height = 24, units = "cm", dpi = 600)
 
 ```
 
