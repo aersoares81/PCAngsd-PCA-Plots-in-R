@@ -28,7 +28,8 @@ library(ggrepel)
 #library(RColorBrewer)
 
 # Make sure you're in the right place
-basedir <- "~/Your/path/here/" # Make sure to edit this to match your $BASEDIR
+# Don't forget to edit this!
+basedir <- "~/Your/path/here/"
 
 # Load the output from PCAangsd
 cov_quad <- as.matrix(read.table(paste0(basedir, "output.cov"), header = F))
