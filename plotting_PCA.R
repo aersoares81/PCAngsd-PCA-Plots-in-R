@@ -11,7 +11,7 @@ basedir <- "~/Your/path/here/" # Make sure to edit this to match your $BASEDIR
 cov_quad <- as.matrix(read.table(paste0(basedir, "output.cov"), header = F))
 
 # Now it will perform the PCA
-mme.pca <- eigen(cov_quad)
+run.pca <- eigen(cov_quad)
 
 # Here is the information from your population: location and name of the samples
 samplemat <- as.matrix(read.table(paste0(basedir, "pop.info"), header = F))
@@ -19,7 +19,7 @@ sampleheaders <- c("location","sample_id")
 colnames(samplemat) <- sampleheaders
 
 # Extract the eigenvectors and turn them into a dataframe for plotting
-eigenvectors = mme.pca$vectors #extract eigenvectors 
+eigenvectors = run.pca$vectors #extract eigenvectors 
 # Combining the information from the populations/samples
 pca.vectors = as_tibble(cbind(samplemat, data.frame(eigenvectors)))
 # You can edit this too
