@@ -20,7 +20,7 @@ That will be helpful to add labels to your plot, and shouldn't be too complicate
 
 Now you're ready to plot. Here's the code I use:
 
-```
+```R
 library(RcppCNPy)
 library(ggfortify)
 library(tidyverse)
