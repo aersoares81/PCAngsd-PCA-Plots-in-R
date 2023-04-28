@@ -90,10 +90,10 @@ Here are some example plots. They were created using the example dataset from [P
 
 Simple PCA plot:
 
-<img src="https://github.com/aersoares81/PCAngsd-PCA-Plots-in-R/blob/fc870a00c1b954a2d41dbb37ef44ed94c4f0e7c3/example_simple_pca_plot.png" width="60%" height="60%">
+<img src="https://github.com/aersoares81/PCAngsd-PCA-Plots-in-R/blob/fc870a00c1b954a2d41dbb37ef44ed94c4f0e7c3/example_simple_pca_plot.png" width="65%" height="65%">
 
 
 Labeled PCA plot:
 
-<img src="https://github.com/aersoares81/PCAngsd-PCA-Plots-in-R/blob/fc870a00c1b954a2d41dbb37ef44ed94c4f0e7c3/example_labeled_pca_plot.png" width="60%" height="60%">
+<img src="https://github.com/aersoares81/PCAngsd-PCA-Plots-in-R/blob/fc870a00c1b954a2d41dbb37ef44ed94c4f0e7c3/example_labeled_pca_plot.png" width="65%" height="65%">
 
