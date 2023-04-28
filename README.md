@@ -56,15 +56,15 @@ legend_title <- "Location"
 # Don't forget to uncomment the library in in the beginning of the script too.
 simple.pca = ggplot(data = pca.vectors, aes(x=X1, y=X2, colour = location, label = sample_id)) + 
   geom_point() + 
-  labs(title="Homo sapiens", x="PC1",y="PC2",fill = "Location", colour ="Location", labels="Location") + 
+  labs(title="Homo sapiens", x="PC1",y="PC2") + 
   theme(plot.title = element_text(face = "italic")) #+ scale_color_brewer(palette="Set1")
 plot(simple.pca)
 
 # This will create another PCA plot.
-# In this version, every point (or as much as possible considering their density) will have the sample ID assigned to it.
+# In this version, every point (or as many as possible) will have the sample ID assigned to it.
 # It's neat if you want to see where exactly each sample is placed.
 labeled.pca = ggplot(data = pca.vectors, aes(x=X1, y=X2, colour = location, label = sample_id)) + 
-  geom_point() + labs(title="Homo sapiens", x="PC1",y="PC2",fill = "Location", colour ="Location", labels="Location") + 
+  geom_point() + labs(title="Homo sapiens", x="PC1",y="PC2") + 
   theme(plot.title = element_text(face = "italic")) + 
   geom_label_repel(show.legend = FALSE) #+ scale_color_brewer(palette="Set1")
 plot(labeled.pca)
