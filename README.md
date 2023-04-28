@@ -55,8 +55,7 @@ legend_title <- "Location"
 # Uncomment and use the palette your like the most if you want to change the colors.
 # Don't forget to uncomment the library in in the beginning of the script too.
 simple.pca = ggplot(data = pca.vectors, aes(x=X1, y=X2, colour = location, label = sample_id)) + 
-  geom_point() + 
-  labs(title="Homo sapiens", x="PC1",y="PC2") + 
+  geom_point() + labs(title="Homo sapiens", x="PC1",y="PC2") + 
   theme(plot.title = element_text(face = "italic")) #+ scale_color_brewer(palette="Set1")
 plot(simple.pca)
 
