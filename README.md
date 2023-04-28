@@ -55,7 +55,8 @@ legend_title <- "Location"
 # Uncomment and use the palette your like the most if you want to change the colors.
 # Don't forget to uncomment the library in in the beginning of the script too.
 simple.pca = ggplot(data = pca.vectors, aes(x=X1, y=X2, colour = location, label = sample_id)) + 
-  geom_point() + labs(title="Homo sapiens", x="PC1",y="PC2") + 
+  geom_point() + labs(title="Title goes here", x="PC1",y="PC2") + 
+  # I'm making the title in italics because it's usually the name of a species
   theme(plot.title = element_text(face = "italic")) #+ scale_color_brewer(palette="Set1")
 plot(simple.pca)
 
@@ -63,7 +64,8 @@ plot(simple.pca)
 # In this version, every point (or as many as possible) will have the sample ID assigned to it.
 # It's neat if you want to see where exactly each sample is placed.
 labeled.pca = ggplot(data = pca.vectors, aes(x=X1, y=X2, colour = location, label = sample_id)) + 
-  geom_point() + labs(title="Homo sapiens", x="PC1",y="PC2") + 
+  geom_point() + labs(title="Title goes here", x="PC1",y="PC2") + 
+  # I'm making the title in italics because it's usually the name of a species
   theme(plot.title = element_text(face = "italic")) + 
   geom_label_repel(show.legend = FALSE) #+ scale_color_brewer(palette="Set1")
 plot(labeled.pca)
