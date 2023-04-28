@@ -81,5 +81,19 @@ ggsave(filename = paste0(basedir, "labeled_pca_plot.pdf"),
   plot = labeled.pca, width = 28, height = 24, units = "cm", dpi = 600)
 
 ```
-
 You can download it from this repo too, of course.
+
+
+## Example plots
+
+Here are some example plots. They were created using the example dataset from [PCAngsd](http://www.popgen.dk/software/index.php/PCAngsd), and the location information is completely made up, I added them to demonstrate how it should look like in your own plots.
+
+Simple PCA plot:
+
+<img src="https://github.com/aersoares81/PCAngsd-PCA-Plots-in-R/blob/fc870a00c1b954a2d41dbb37ef44ed94c4f0e7c3/example_simple_pca_plot.png" width="60%" height="60%">
+
+
+Labeled PCA plot:
+
+<img src="https://github.com/aersoares81/PCAngsd-PCA-Plots-in-R/blob/fc870a00c1b954a2d41dbb37ef44ed94c4f0e7c3/example_labeled_pca_plot.png" width="60%" height="60%">
+
